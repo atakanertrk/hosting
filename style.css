@@ -1,43 +1,35 @@
-#myVideo {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
+#myVideo{
+  position: fixed;
 }
 
-.content {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-  }
+.myheader{
+  font-size: 3rem;
+  text-align: center;
+}
 
-  h1{
-      text-align: center;
-      background-color: black;
-      user-select:none;
-      min-height: 5rem;
-      padding-top: 1rem;
-  }
+.content{
+  position:fixed;
+  width: 100%;
+  height: auto;
+}
 
-  .green{
-    color:#4b5320;
-  }
+.mygreen{
+  color:#4b5320;
+  user-select:none
+}
+.white{
+  color:white;
+  user-select:none
+}
+.red{
+  color:red;
+  user-select:none
+}
 
-  .red{
-    color:red;
-  }
+.navbar-center
+{
+  
+  width: 95%;
+    text-align: center;
+}
 
-  .white{
-    color:white;
-  }
-
-  .side1{
-      position: absolute;
-      top:0;
-      left:0;
-  }
-
-  .side2{
-    position: relative;
-  }
