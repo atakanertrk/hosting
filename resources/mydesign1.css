@@ -21,12 +21,25 @@
 }*/
 
 .myhover {
-    opacity: 0.9;
+    opacity: 1;
+    border-radius: 10%;
+    
 }
 .myhover:hover {
     transition: 0.3s;
-    background-color: black;
-    opacity: 1;
+    opacity: 0.7;
+    background-color:black;
+
+}
+
+.sizing{
+    max-width: 20vw;
+    max-height: 15vh;
+    min-width: 120px;
+    min-height: 80px;
+}
+.headersizing{
+    font-size: 5vh;
 }
 
 hr.new5 {
@@ -44,7 +57,7 @@ html, body {
 
 .myimage2 {
     max-width: 20%;
-    min-width: 100px;
+    min-width: 80px;
     height: auto;
 }
 
