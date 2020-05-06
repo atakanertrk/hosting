@@ -21,13 +21,10 @@
 }*/
 
 .myhover {
-    opacity: 1;
-    border-radius: 10%;
-    
+    border-radius: 20%;
 }
 .myhover:hover {
-    transition: 0.3s;
-    opacity: 0.7;
+    transition: 0.5s;
     background-color:black;
 
 }
@@ -37,9 +34,14 @@
     max-height: 15vh;
     min-width: 120px;
     min-height: 80px;
+    width: 15vw;
+    height: 10vh;
+    margin-left:1.5vw;
+    margin-right: 1.5vw;
 }
 .headersizing{
     font-size: 5vh;
+    text-shadow:0 0 10px rgb(172, 15, 15);
 }
 
 hr.new5 {
@@ -63,11 +65,17 @@ html, body {
 
 /* arkaplan videosu*/
 #myVideo {
+   /* position: fixed;
+    left:0;
+    top: 0;
+    min-width: 100%;
+    min-height: 100%; */
     position: fixed;
     right: 0;
     bottom: 0;
     min-width: 100%;
     min-height: 100%;
+    transform: translateX(calc((100% - 100vw) / 2));
 }
 
 .content {
@@ -75,6 +83,12 @@ html, body {
     overflow: auto;
 }
 
+.burgericon{
+  width: 25px;
+  height: 2px;
+  background-color: white;
+  margin: 6px;
+}
 
 /* NAVVVVV 1111111111111111*/
 
