@@ -1,0 +1,187 @@
+﻿body {
+    /*background-image: url('x1.jpg')
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;*/
+    max-width: 100%;
+}
+
+.white{
+    color:white;
+}
+.red{
+    color:red;
+}
+
+/*html, body {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}*/
+
+.myhover {
+    border-radius: 20%;
+}
+.myhover:hover {
+    transition: 0.5s;
+    background-color:black;
+
+}
+
+.sizing{
+    max-width: 20vw;
+    max-height: 15vh;
+    min-width: 120px;
+    min-height: 80px;
+    width: 15vw;
+    height: 10vh;
+    margin-left:1.5vw;
+    margin-right: 1.5vw;
+}
+.headersizing{
+    font-size: 5vh;
+    text-shadow:0 0 10px rgb(172, 15, 15);
+}
+
+hr.new5 {
+    border: 4px solid black;
+    border-radius: 3px;
+}
+
+html, body {
+    margin: 0;
+    padding: 0px;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.myimage2 {
+    max-width: 20%;
+    min-width: 80px;
+    height: auto;
+}
+
+/* arkaplan videosu*/
+#myVideo {
+   /* position: fixed;
+    left:0;
+    top: 0;
+    min-width: 100%;
+    min-height: 100%; */
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    transform: translateX(calc((100% - 100vw) / 2));
+}
+
+.content {
+    position: fixed;
+    overflow: auto;
+}
+
+.burgericon{
+  width: 25px;
+  height: 2px;
+  background-color: white;
+  margin: 6px;
+}
+
+/* NAVVVVV 1111111111111111*/
+
+/*#mySidenav a {
+    position: absolute;
+    left: -80px;
+    transition: 0.3s;
+    padding: 15px;
+    width: 130px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    border-radius: 0 5px 5px 0;
+}
+
+    #mySidenav a:hover {
+        left: 0;
+    }
+
+#about {
+    top: 60px;
+    background-color: #4CAF50;
+}
+
+#blog {
+    top: 80px;
+    background-color: #2196F3;
+}
+
+#projects {
+    top: 120px;
+    background-color: #f44336;
+}
+
+#contact1 {
+    top: 100px;
+    background-color: #555
+}
+#contact2 {
+    top: 200px;
+    background-color: #555
+}*/
+
+
+
+
+
+
+
+
+/* NAVVVVVVV 22222222222 */
+
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+    .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #f1f1f1;
+        display: block;
+        transition: 0.3s;
+    }
+
+        .sidenav a:hover {
+            color: #f1f1f1;
+        }
+
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+        .sidenav a {
+            font-size: 18px;
+        }
+}

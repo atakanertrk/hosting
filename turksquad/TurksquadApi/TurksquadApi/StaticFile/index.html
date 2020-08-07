@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<link href="resources/mydesign1.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<html>
+
+<head>
+    <meta name="google-site-verification" content="T7SFlWRIudX58Uemxt0knFiJvVeZuKWWcxo120nUGP0" />
+    <meta name="title" content="Squad Türk Sunucusu">
+    <meta charset="UTF-8">
+    <meta name="description" content="Squad Türk Sunucusu ve Oyuncu Topluluğu">
+    <meta name="keywords" content="squad,türkiye,sunucu,azerbaycan,discord,steam">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="language" content="Turkish">
+    <meta name="viewport" content="width=device-width" />
+    <title>Squad Türk Sunucusu</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-158310029-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-158310029-1');
+    </script>
+</head>
+
+<body>
+    <video autoplay muted loop id="myVideo">
+        <source src="https://steamcdn-a.akamaihd.net/steam/apps/256734828/movie480.webm?t=1541617873" type="video/mp4">
+        Your browser does not support HTML5 video.
+    </video>
+    <div class="content" style="width:100%; height:100%;">
+        <div style="background-color:rgb(0,0,0,0.5); padding-top: 20px; background-image: linear-gradient(to right, rgba(0,0,0,0.5),                    rgba(255,0,0,0.2),rgba(0,0,0,0.5));">
+            <h1 style=" text-align:center; padding-bottom:20px; padding-top:20px; padding-left: 5%; "
+                class="headersizing">
+                
+                <span class="white" style="  user-select:none">
+                    [TR]
+                </span>
+                <span class="red" style=" user-select:none">
+                    Turk Sunucusu
+                </span>
+                <span class="white" style=" user-select:none">
+                    Skirmish
+                </span>
+            </h1>
+        </div>
+        <div style="cursor:pointer;position:absolute; top:50px; left:2%; color:white; font-size:2vh "
+            onclick="openNav()">
+            <div class="burgericon"></div>
+            <div class="burgericon"></div>
+            <div class="burgericon"></div>
+        </div>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"> &times;</a>
+            <a href="hakkimizda.html">Hakkımızda</a>
+            <a href="sunucukurallari.html">Sunucu Kuralları</a>
+            <a href="haritahavuzu.html">Harita Havuzu</a>
+            <hr />
+            <div style="text-align:center">
+                <script
+                    type="application/javascript">window.addEventListener('message', function (e) { if (e.data.uid && e.data.type === 'sizeUpdate') { var i = document.querySelector('iframe[name="' + e.data.uid + '"]'); i.style.width = e.data.payload.width; i.style.height = e.data.payload.height; } });</script>
+                <iframe
+                    src="https://cdn.battlemetrics.com/b/standardVertical/5478668.html?foreground=%23EEEEEE&linkColor=%231185ec&lines=%23333333&background=%23222222&chart=players%3A24H&chartColor=%23FF0700&maxPlayersHeight=300"
+                    frameborder=0 style="border:0" name="amspd"></iframe>
+            </div>
+        </div>
+        <div style="text-align:center; margin-top: 15%;">
+            <a href="https://www.youtube.com/channel/UCexTXQNknXaaGoXNT0cABeQ" target="_blank"><img src="resources/youtubenew2.png" class="myhover sizing" alt="Responsive image"></a>
+            <a href="https://discord.gg/Sy7Cba9" target="_blank"><img src="resources/discordnew.png" class="myhover sizing" alt="Responsive image"></a>
+            <a href="steam://connect/185.122.202.151:27165"><img src="resources/steambaglannew2.png" class="myhover sizing" alt="Responsive image"></a>
+        </div>
+        <div style="background-color: rgba(0,0,0,0.7); position: fixed; bottom:0; left:0; width:100%; margin-bottom:1%; padding-top:20px; padding-right:25vw;">
+            <h1 style="color:white">Duyurular</h1>
+            <ul style="color:white">
+                <li id="duyurutxt">
+                    Duyurular yükleniyor...
+                </li>
+            </ul>
+        </div>
+        <img class="myimage2" src="resources/8mmlogosuyeni.png" alt="Responsive image" width="9%" height="14%"
+            style="opacity:0.8; position:fixed; bottom:8px; right:16px;">
+    </div>
+    <script>
+        const Http = new XMLHttpRequest();
+        const url='https://turksquadduyuru.azurewebsites.net/Home/DuyuruTxt';
+        Http.open("GET", url);
+        Http.send();
+
+        Http.onreadystatechange = (e) => {
+        console.log(Http.responseText);
+        document.getElementById("duyurutxt").innerHTML = Http.responseText;
+        }
+    </script>
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
